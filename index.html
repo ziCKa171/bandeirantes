@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bandeirantes - Baixar App</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #3B82F6 0%, #1E40AF 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            text-align: center;
+        }
+
+        .header {
+            margin-bottom: 40px;
+        }
+
+        .logo {
+            font-size: 60px;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            color: #1F2937;
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            color: #6B7280;
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        .download-buttons {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 40px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .btn {
+            flex: 1;
+            min-width: 250px;
+            padding: 20px;
+            border: none;
+            border-radius: 12px;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .btn-ios {
+            background: linear-gradient(135deg, #000000 0%, #333333 100%);
+            color: white;
+        }
+
+        .btn-ios:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+        }
+
+        .btn-android {
+            background: linear-gradient(135deg, #34A853 0%, #1B6F35 100%);
+            color: white;
+        }
+
+        .btn-android:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(52, 168, 83, 0.3);
+        }
+
+        .btn-icon {
+            font-size: 32px;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .features {
+            background: #F3F4F6;
+            padding: 30px;
+            border-radius: 12px;
+            margin-bottom: 30px;
+            text-align: left;
+        }
+
+        .features h3 {
+            color: #1F2937;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .features-list {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+
+        .feature-item {
+            color: #374151;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .feature-item::before {
+            content: "✓";
+            color: #10B981;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .credentials {
+            background: #FFF3CD;
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 30px;
+            border-left: 4px solid #FCD34D;
+        }
+
+        .credentials h4 {
+            color: #78350F;
+            margin-bottom: 15px;
+        }
+
+        .credential {
+            background: white;
+            padding: 10px;
+            margin: 8px 0;
+            border-radius: 6px;
+            font-family: 'Courier New', monospace;
+            color: #1F2937;
+        }
+
+        .footer {
+            color: #6B7280;
+            font-size: 14px;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #E5E7EB;
+        }
+
+        .stats {
+            display: flex;
+            justify-content: space-around;
+            margin: 30px 0;
+            flex-wrap: wrap;
+        }
+
+        .stat {
+            text-align: center;
+            margin: 10px;
+        }
+
+        .stat-number {
+            font-size: 28px;
+            font-weight: bold;
+            color: #3B82F6;
+        }
+
+        .stat-label {
+            color: #6B7280;
+            font-size: 12px;
+            margin-top: 5px;
+        }
+
+        .store-links {
+            margin: 30px 0;
+        }
+
+        .store-links a {
+            display: inline-block;
+            margin: 10px;
+            color: #3B82F6;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .store-links a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">🚚</div>
+            <h1>Bandeirantes</h1>
+            <p class="subtitle">Distribuição de Água e Gás</p>
+        </div>
+
+        <div class="download-buttons">
+            <a href="#ios" class="btn btn-ios">
+                <span class="btn-icon">🍎</span>
+                Baixar para iPhone
+            </a>
+            <a href="#android" class="btn btn-android">
+                <span class="btn-icon">🤖</span>
+                Baixar para Android
+            </a>
+        </div>
+
+        <div class="stats">
+            <div class="stat">
+                <div class="stat-number">✨</div>
+                <div class="stat-label">100% Pronto</div>
+            </div>
+            <div class="stat">
+                <div class="stat-number">⚡</div>
+                <div class="stat-label">Instantâneo</div>
+            </div>
+            <div class="stat">
+                <div class="stat-number">🔒</div>
+                <div class="stat-label">Seguro</div>
+            </div>
+        </div>
+
+        <div class="features">
+            <h3>📱 O que você pode fazer</h3>
+            <div class="features-list">
+                <div class="feature-item">Fazer pedidos</div>
+                <div class="feature-item">Rastrear entrega</div>
+                <div class="feature-item">Histórico completo</div>
+                <div class="feature-item">Múltiplos pagamentos</div>
+                <div class="feature-item">Notificações</div>
+                <div class="feature-item">Interface simples</div>
+            </div>
+        </div>
+
+        <div class="credentials">
+            <h4>🔐 Teste o App</h4>
+            <div class="credential">Email: cliente@bandeirantes.com</div>
+            <div class="credential">Senha: 123456</div>
+        </div>
+
+        <div class="store-links">
+            <p>Ou procure nas lojas:</p>
+            <a href="https://apps.apple.com/br/app/bandeirantes">📍 App Store</a>
+            <a href="https://play.google.com/store/apps/details?id=com.bandeirantes">📍 Google Play</a>
+        </div>
+
+        <div class="footer">
+            <p>Desenvolvido com ❤️ para Bandeirantes</p>
+            <p>© 2024 - Todos os direitos reservados</p>
+        </div>
+    </div>
+
+    <script>
+        // Detectar dispositivo e redirecionar
+        const userAgent = navigator.userAgent.toLowerCase();
+        const isIOS = /iphone|ipad|ipod/.test(userAgent);
+        const isAndroid = /android/.test(userAgent);
+
+        document.querySelector('.btn-ios').addEventListener('click', function(e) {
+            e.preventDefault();
+            if (isIOS) {
+                window.location.href = 'https://apps.apple.com/br/app/bandeirantes/id123456789';
+            } else {
+                alert('Este link é para iPhone. Use um dispositivo iOS.');
+            }
+        });
+
+        document.querySelector('.btn-android').addEventListener('click', function(e) {
+            e.preventDefault();
+            if (isAndroid) {
+                window.location.href = 'https://play.google.com/store/apps/details?id=com.bandeirantes';
+            } else {
+                alert('Este link é para Android. Use um dispositivo Android.');
+            }
+        });
+    </script>
+</body>
+</html>
